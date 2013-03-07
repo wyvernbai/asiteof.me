@@ -1,0 +1,9 @@
+views/archives/*.md
+.DS_Store
+*.*~
+**/*.swp
+*.swp
+*~
+*.db
+config/config_*.yaml
+vendor/
