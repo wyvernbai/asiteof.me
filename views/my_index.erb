@@ -26,6 +26,14 @@
     <!--link href='http://fonts.googleapis.com/css?family=Terminal+Dosis|Niconne' rel='stylesheet' type='text/css' /-->
     <!--link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css' /-->
     <!--link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'-->
+      <?php
+      $u_agent = $_SERVER['HTTP_USER_AGENT'];
+      $ub = '';
+      if(preg_match('/MSIE/i',$u_agent))
+      { ?>
+      <script>alert("If you use IE, You can see shit!")</script>
+      <?php }
+      ?>
   </head>
   <body>
     <div class="outline"></div>

@@ -34,6 +34,15 @@
     <!--link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic' rel='stylesheet' type='text/css'-->
     <!--link href='http://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'-->
     <script src="/javascripts/jquery/1.5.2/jquery.min.js"></script>
+
+    <?php
+    $u_agent = $_SERVER['HTTP_USER_AGENT'];
+    $ub = '';
+    if(preg_match('/MSIE/i',$u_agent))
+    {?>
+    <script>alert("If you use IE, You can see shit!")</script>
+    <?php }
+    ?>
   </head>
   <body>
   	<% if admin? then%>
