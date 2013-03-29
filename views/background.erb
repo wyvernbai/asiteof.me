@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-Hans" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <% if @article then %>
+      <title><%= @article.title %> | <%= Blog.title %></title>
+      <% if @article.tags.size != 0 then %>
+        <meta name="keywords" content="<%= get_article_keywords @article %>">
+      <% end%>
+    <% else%>
+      <title><%= get_title %><%= Blog.title%></title>
+    <%end%>
+    <meta name="robots" content="all" />
+    <meta name="author" content="WyvernBai">
+    <meta http-equiv="X-UA-Compatible" content="IE=100" />
+    <link rel="stylesheet" type="text/css" href="/css/main_1.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+    <link rel="stylesheet" href="/css/highlight/<%= Setting.code_style %>.css">
+    <script src="/javascripts/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39157716-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+    </script>
+    <!--link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic' rel='stylesheet' type='text/css'-->
+    <!--link href='http://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'-->
+    <script src="/javascripts/jquery/1.5.2/jquery.min.js"></script>
+
+    <script>
+      var userAgent = navigator.userAgent.toLowerCase();
+      // Test if the browser is IE and check the version number is lower than 9
+      if (/msie/.test(userAgent) && 
+          parseFloat((userAgent.match(/.*(?:rv|ie)[\/: ](.+?)([ \);]|$)/) || [])[1]) < 9) {
+            alert("If you use IE, you can see SHIT.");
+            }
+    </script>
+  </head>
+  <body>
+  	<% if admin? then%>
+  		<%= erb :adminbar %>
+  		<div class="outline" style="margin-top: 23px;"></div>
+  	<% else %>
+  		<div class="outline"></div>
+  	<% end %>
+    <div class="container">
+  		<header role="banner">
+        <div id="headline">
+  			<a href="/" id="logo">
+          <img src="/css/img/logo.png" alt="logo" >
+  				<!--h1>
+  				Steins;<em class="black-bg">G</em>ate
+  				<em><%= Blog.site_description%></em>
+  				</h1-->
+  			</a>
+  			<nav id="nav">
+  				<ul>
+  					<li>
+  						<a <%= current_page? "/" %> href="/">HOME</a>
+  					</li>
+  					<li>
+  						<a <%= current_folder? "/archives/*"%> href="/archives/">BLOG</a>
+  					</li>
+  					<li>
+  						<a <%= current_page? "/project" %> href="/project">PROJ.</a>
+  					</li>
+  					<li>
+  						<a <%= current_page? "/about" %> href="/about">ABOUT</a>
+  					</li>
+  				</ul>
+  			</nav>
+  			<script src="/javascripts/script_1.js"></script>
+        </div>     
+  		</header>
+      <div class="cont-div"></div>
+  		<div id="content">
+  			<%= yield %>
+  		</div>
+  		<!-- /content -->
+  	<!-- /wrap -->
+    <!--section id="footer-head"></section-->
+
+  	<footer id="footer"  class="about">
+      <div class="bottom">
+              <section id="recent-post">
+                <h1>Recent Post</h1>
+                <ul id="ticker">
+                  <% Article.reverse_order(:created_at).limit(8).each do |article| %>
+                    <li><a href="/archives/<%= article.id%>"><%= article.title%></a></li>
+                  <% end %>
+                </ul>
+                <script>
+                  function tick(){
+                    $('#ticker li:first').slideUp( function () { $(this).appendTo($('#ticker')).slideDown(); });
+                  }
+                  setInterval(function(){ tick () }, 4000);
+                </script>
+              </section>
+              <section id="you-way-out">
+                <h1>Your Way Out</h1>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/archives/">Blog</a></li>
+                  <li><a href="/project">Demo</a></li>
+                  <li><a href="/about">About</a></li>
+                  <!--li><a href="<%= Social.gplus%>"><em>&#103;</em>Google Plus</a></li>
+                  <li><a href="mailto:<%= Blog.email%>"><em class="email">&#64;</em>Send Email</a></li>
+                  <li><em class="address">&#63;</em>Harbin, China<li-->
+                </ul>
+              </section>
+              
+              <section id="get-connected">
+                <h1>Connect Me</h1>
+                <ul>
+                  <li><a href="<%= Social.gplus%>">Google Plus</a></li>
+                  <li><a href="http://weibo.com/wyvernbai">Sina Weibo</a></li>
+                  <li><a href="mailto:<%= Blog.email%>">Send Email</a></li>
+                  <li>Harbin, China</li>
+                  <!--li><a href="<%= Social.gplus%>"><em>&#103;</em>Google Plus</a></li>
+                  <li><a href="mailto:<%= Blog.email%>"><em class="email">&#64;</em>Send Email</a></li>
+                  <li><em class="address">&#63;</em>Harbin, China<li-->
+                </ul>
+              </section>
+              <section id="legal-stuff">
+                <h1>Legal Stuff</h1>
+                <ul>
+                  <li> © Copyright <a href="http://www.asiteof.me">aSiteof.Me</a></li>
+                  <li>Designed and code by <a href="http://www.asiteof.me">WyvernBai</a></li>
+                  <li>Powered by <a href="http://www.sinatrarb.com">Sinatra</a></li>
+                  <li>All Rights Reserved.</li>
+                </ul>
+              </section>
+            </div>
+          </footer>
+  		<!--div class="footer-inner">
+  			<div class="copy">
+  				<p>
+  					©2012 ElvenHut. <em>Be original.</em>
+  				</p>
+  			</div>
+  			<ul class="social">
+          <% if Social.gplus then%>
+  				<li class="gplus">
+          <a href="<%= Social.gplus%>">Google+</a>
+  				</li>
+          <% end%>
+          <% if Social.github then%>
+  				<li class="github">
+          <a href="<%= Social.github%>">GitHub</a>
+  				</li>
+          <% end%>
+  				<li class="rss">
+  					<a href="/feed">RSS Feed</a>
+  				</li>
+        </ul>
+  		</div>
+  	</footer-->
+  	<!-- /extra -->
+  </div>
+  </body>
+</html>

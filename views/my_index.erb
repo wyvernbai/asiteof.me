@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-Hans" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homepage of WyvernBai</title>
+    <meta name="author" content="WyvernBai">
+    <meta name="robots" content="all" />
+    <link rel="stylesheet" type="text/css" href="/css/homepage.css"/>
+    <link rel="stylesheet" type="text/css" href="css/homepage_menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/letter_container.css" />
+    <link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+    <script src="/javascripts/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39157716-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+    </script>
+    <!--link href='http://fonts.googleapis.com/css?family=Terminal+Dosis|Niconne' rel='stylesheet' type='text/css' /-->
+    <!--link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css' /-->
+    <!--link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'-->
+    <script>
+      var userAgent = navigator.userAgent.toLowerCase();
+      // Test if the browser is IE and check the version number is lower than 9
+      if (/msie/.test(userAgent) && 
+          parseFloat((userAgent.match(/.*(?:rv|ie)[\/: ](.+?)([ \);]|$)/) || [])[1]) < 9) {
+            alert("If you use IE, you can see SHIT.");
+            }
+    </script>
+  </head>
+  <body>
+    <div class="outline"></div>
+    <div class="container">
+      <header role="banner">
+        <div id="headline">
+         <div class="adidas-halfwidth" style="margin-right: 25px;"></div>
+         <div id="logo">
+            <a href="/">
+              <img src="/css/img/logo.png" alt="logo" >
+                <!--h1>
+                  L<em style="font-size:32px;font-family: 'Sorts Mill Goudy', serif;">ogo&nbsp;</em><em>is</em>&nbsp;M<em style="font-size:32px;font-family: 'Sorts Mill Goudy', serif;">issing</em>
+                </h1>
+                <h4>The logo ran away from home</h4-->
+            </a>
+          </div>
+            <div class="adidas-halfwidth" style="margin-left: 25px;"></div>
+        </div>
+        <div id="letter-container" class="letter-container">
+          <h2>
+            <a href="#">Something about Programming and WyvernBai</a>
+          </h2>
+          <h2 id="small-letter-container">
+            <a href="#" class="descript">This website is built with HTML5 and CSS3</a>
+            <a href="#" class="descript">Evil and old browsers not supported</a>
+          </h2>
+          <script type="text/javascript" src="/javascripts/jquery.lettering.js"></script>
+          <script type="text/javascript">
+            $(function() {
+              $("#letter-container h2 a").lettering();
+            });
+          </script>
+        </div>
+        <!--a href="/" id="logo">
+          <h1>
+          <%= Blog.site_name%>
+          <em><%= Blog.site_description%></em>
+          </h1>
+        </a-->
+      </header>
+      </div>
+      <div class="cont-div"></div>
+  	<div id="wrap">
+  		
+  		<div class="content">
+        
+        <ul class="ca-menu">
+                    <li>
+                        <a href="/archives/">
+                            <span class="ca-icon">F</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Personal<br />Blog</h2>
+                                <h3 class="ca-sub">A blog about programming</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<%= Social.github%>">
+                            <span class="ca-icon">&#95;</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">GitHub Homepage</h2>
+                                <h3 class="ca-sub">Every programmer has one</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about#followme">
+                            <span class="ca-icon">N</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">My Internet Footprint</h2>
+                                <h3 class="ca-sub">You can find me here</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/project/">
+                            <span class="ca-icon">&#46;</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Closing<br />Projects</h2>
+                                <h3 class="ca-sub">Some demos or documents</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/about">
+                            <span class="ca-icon">&#85;</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Define WyvernBai</h2>
+                                <h3 class="ca-sub">Ooops... Something wrong:P</h3>
+                            </div>
+                        </a>
+                    </li>
+        </ul>
+        <div class="aboutwrapper">
+          <div class="about">
+            <div class="top">
+              <section id="who-am-i" class="first">
+                <div id="who-am-i-icon"></div>
+                <h1>Who Am I ?</h1>
+                <ul>
+                  <li>Computer Science Researcher</li>
+                  <li>Energetic Programmer</li>
+                  <li>Senior Otaku</li>
+                  <li><a href="/about">Read More</a></li>
+                  <!--p>I am currently a student of jointly education Ph.D. of Micrisoft Research Asia and Harbin Institute of Technology. I received B.S. degrees in 2012 from the School of Computer Science and Technology, HIT when I am 20 years old. My main research interests are Information retrieval, data mining and machine learning.</p-->
+                </ul>
+              </section>
+              <section id="what-i-do" class="second">
+                <div id="what-i-do-icon"></div>
+                <h1>What I Do ?</h1>
+                <ul>
+                  <li>Data Mining Research</li>
+                  <li>Natural Language Processing Research</li>
+                  <li>Website Framework and Design</li>
+                  <li>Cartoon Sketch</li>
+                </ul>
+              </section>
+              <section id="recent-post">
+                <div id="recent-post-icon"></div>
+                <h1>Recent Post</h1>
+                <ul id="ticker">
+                  <% articles.each do |article| %>
+                    <li><a href="/archives/<%= article.id%>"><%= article.title%></a></li>
+                  <% end %>
+                </ul>
+                <script>
+                  function tick(){
+                    $('#ticker li:first').slideUp( function () { $(this).appendTo($('#ticker')).slideDown(); });
+                  }
+                  setInterval(function(){ tick () }, 4000);
+                </script>
+              </section>
+            </div>
+            <div class="bottom">
+               <div class="info">
+                <div class="qr_code"></div>
+              </div>
+              <section id="get-connected">
+                <div id="get-connected-icon"></div>
+                <h1>Connect Me</h1>
+                <ul>
+                  <li><img src="/css/img/google-plus.png" height="16" width="16" alt="Google Plus" ><a href="<%= Social.gplus%>">Google Plus</a></li>
+                  <li><img src="/css/img/weibo.png" height="16" width="16" alt="Weibo" ><a href="http://weibo.com/wyvernbai">Sina Weibo</a></li>
+                  <li><img src="/css/img/mail.png" height="13" width="13" style="margin-right:13px;" alt="Mail" ><a href="mailto:<%= Blog.email%>">Send Email</a></li>
+                  <li><img src="/css/img/map.png" height="14" width="14" style="margin-right:12px;" alt="Map">Harbin, China</li>
+                  <!--li><a href="<%= Social.gplus%>"><em>&#103;</em>Google Plus</a></li>
+                  <li><a href="mailto:<%= Blog.email%>"><em class="email">&#64;</em>Send Email</a></li>
+                  <li><em class="address">&#63;</em>Harbin, China<li-->
+                </ul>
+              </section>
+              <section id="legal-stuff">
+                <div id="legal-stuff-icon"></div>
+                <h1>Legal Stuff</h1>
+                <ul>
+                  <li> © Copyright <a href="http://www.asiteof.me">aSiteof.Me</a></li>
+                  <li>Designed and code by <a href="http://www.asiteof.me">WyvernBai</a></li>
+                  <li>Powered by <a href="http://www.sinatrarb.com">Sinatra</a></li>
+                  <li>All Rights Reserved.</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+  		<!-- /content -->
+  	</div>
+  	<!-- /wrap -->
+  	<!-- /extra -->
+  </div>
+  <footer></footer>
+  </body>
+  
+</html>
