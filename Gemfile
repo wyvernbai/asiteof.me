@@ -28,3 +28,4 @@ gem 'rakismet'
 gem 'mail'
 gem 'nokogiri'
 gem "#{adapter}"
+gem "rainbows"
