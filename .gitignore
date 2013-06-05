@@ -6,5 +6,6 @@ public/uploads/*
 *.swp
 *~
 *.db
+*.pdf
 config/config_*.yaml
 vendor/

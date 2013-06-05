@@ -14,6 +14,10 @@ class ElvenHut < Sinatra::Application
     erb :about, :layout => :background
   end
 
+  get "/yumo" do
+    erb :yumo
+  end
+
   get "/project" do
     project_tag = Tag.filter(:name => "project").first
     if project_tag != nil
