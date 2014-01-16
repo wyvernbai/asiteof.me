@@ -1,0 +1,539 @@
+/*
+Title:		Master styles for ElvenHut version 1.0
+Author:		admin@asiteof.me
+ */
+
+/* main styles */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: rgba(78, 68, 60, 0.75) url(/css/img/homepage_bg.png);
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 0;
+  /*
+  font-family: 'Source Sans Pro', Arial,sans-serif;
+  */
+  font-family: 'Source Sans Pro',"Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif; 
+  /*fa453c
+  background: url(/css/img/outline.png) top repeat-x;
+   */}
+
+.outline {
+border-top: 3px solid #383838;
+}
+
+.container {
+  font-family: 'Source Sans Pro',"Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif; 
+ /* font-family: 'Source Sans Pro', Arial,sans-serif;*/
+  /*font-family: "BigNoodleTitling", Helvetica, Arial, sans-serif;*/
+  line-height: 1.5;
+  min-width: 1280px;
+  height: 100%;
+}
+
+#headline {
+  overflow: hidden;
+  height: 180px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+#footer-head {
+  background: url(/css/img/cta_bg.png) top left repeat-x;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+/* footer styles*/
+footer {
+  font-size: 1em;
+  height: 65px;
+  overflow: hidden;
+  clear: both;
+  width: 100%;
+  background-color: #4b5258;
+  background: transparent url(/css/img/homepage_header.jpg) repeat-x 0 0;
+}
+
+/*content styles*/
+#content {
+  margin: 0 auto;
+  width: 75%;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-top: 65px;
+  margin-bottom: 30px;
+  min-height: 300px;
+}
+
+#content article {
+  /*margin: 0 0 3em 0;*/
+  padding: 10px 0 20px 20%;
+}
+
+.button{
+  font-family: 'Homenaje';
+  margin-top: 10px;
+  color: #f5efe0;
+  width: 100px;
+  background-color: #4b5258;
+}
+
+#login .button:hover, #edit_post .button:hover, .button:hover {
+  background-color: #fa453c;
+  cursor: pointer;
+}
+
+/*basic styles
+
+h1: site title. h2: article tile. h3: paragraph title*/
+
+h1 {
+  font: "NewPressEroded",  "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif; ;
+  /*font:  "NewPressEroded",arial, sans-serif;*/
+  ;
+  color: #383838;
+}
+
+h2 {
+  font-family: 'Homenaje',  "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif; ;
+ 
+ /* font-family: 'Homenaje', arial, sans-serif;
+  */font-size: 1.8em;
+  color: #383838;
+}
+
+h3 {
+   font-family: 'Homenaje',  "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif; ;
+ 
+ /* font-family: 'Homenaje', Tahoma, sans-serif;
+  */font-size: 1.3em;
+  color: #383838;
+}
+
+h4 {
+   font-family: 'Homenaje',  "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif; ;
+ /*
+  font-family: 'Homenaje', Tahoma, sans-serif;
+  */color: #383838;
+  font-size: 1em;
+}
+
+p, li {
+  font-weight: 400;
+  font-size: 1em;
+  color: #4c4b4b;
+  -webkit-font-smoothing: antialiased;
+}
+
+a:hover {
+  color: #fa453c;
+  text-shadow: 0 2px 2px #4b5258;
+}
+
+a:link, a:visited {
+  outline: none;
+}
+
+a {
+  /*font-weight: 300;*/
+  color: #0A7BC1;
+  text-decoration: none;
+}
+
+pre{
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-all;       /* Internet Explorer 5.5+ */
+  font-size: 16px;
+  font-family: Consolas, "Liberation Mono", Courier, 'Source Sans Pro',  "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif; 
+/*
+  font-family: Consolas, "Liberation Mono", Courier, monospace;*/
+  border: 1px solid #fff;
+  box-shadow: inset 0 1px 4px rgba(125, 125, 125, .65);
+  -moz-box-shadow: inset 0 1px 4px rgba(125, 125, 125, .65);
+  -webkit-box-shadow: inset 0 1px 4px rgba(125, 125, 125, .65);
+  -webkit-transition: all .08s ease-in-out;
+  background: #fff;
+  padding: 3px 5px;
+}
+
+code {
+font-family: Consolas, "Liberation Mono", Courier, 'Source Sans Pro',  "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif; 
+  background: #fff;
+  /*  border-radius: 3px;*/
+}
+
+pre{
+  font-size: 16px;
+  /*overflow-x: scroll;*/
+}
+
+embed {
+  display: block;
+  line-height: 0px;
+}
+
+pre {
+  display: block;
+}
+
+li {
+	font-size: 1.1em;
+line-height: 1.6em;
+color: rgb(51, 51, 51);
+text-shadow: 0px 1px 0px #fff;
+margin-top: 10px;
+}
+
+@font-face {
+  font-family: 'NewPressEroded';
+  src:url("font/newpresseroded/New_Press_Eroded.eot");
+  src:url("font/newpresseroded/New_Press_Eroded.ttf") format("truetype");
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family: 'SteinsGate';
+  src:url("font/steins_gate/Steins_Gate.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'BigNoodleTitling';
+  src:url("font/bignoodle_titling/big_noodle_titling.eot");
+  src:url("font/bignoodle_titling/big_noodle_titling.ttf") format("truetype");
+  font-weight:normal;
+  font-style:normal;
+}
+
+
+/*@font-face {
+font-family: 'Source Sans Pro';
+src:url("font/SourceSansPro/SourceSansPro-Light.eot");
+src:url("font/SourceSansPro/SourceSansPro-Light.ttf") format("truetype");
+font-weight: 300;
+font-style:normal;
+}
+
+  @font-face {
+  font-family: 'Source Sans Pro';
+  src:url("font/SourceSansPro/SourceSansPro-LightIt.eot");
+  src:url("font/SourceSansPro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+  @font-face {
+  font-family: 'Source Sans Pro';
+  src:url("font/SourceSansPro/SourceSansPro-Light.eot");
+  src:url("font/SourceSansPro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style:normal;
+}*/
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src:url("font/SourceSansPro/SourceSansPro-Light.eot");
+  src:url("font/SourceSansPro/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src:url("font/SourceSansPro/SourceSansPro-LightIt.eot");
+  src:url("font/SourceSansPro/SourceSansPro-LightIt.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SFDistant';
+  src:url("font/SFDistant.eot");
+  src:url("font/SFDistant.ttf") format("truetype");
+  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Starnext';
+  src:url("font/StarNext.eot");
+  src:url("font/StarNext.ttf") format("truetype");
+  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Starjout';
+  src:url("font/Starjout.eot");
+  src:url("font/Starjout.ttf") format("truetype");
+  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src:url("font/SourceSansPro/SourceSansPro-Regular.eot");
+  src:url("font/SourceSansPro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src:url("font/SourceSansPro/SourceSansPro-It.eot");
+  src:url("font/SourceSansPro/SourceSansPro-It.ttf") format("truetype");
+  font-weight: 400;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Homenaje';
+  src:url("font/homenaje/Homenaje-Regular.eot");
+  src:url("font/homenaje/Homenaje-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Terminal Dosis';
+  src:url("font/TerminalDosis/Terminal_Dosis-Book.eot");
+  src:url("font/TerminalDosis/Terminal_Dosis-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Niconne';
+  src:url("font/niconne/Niconne-Regular.eot");
+  src:url("font/niconne/Niconne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sorts Mill Goudy';
+  src:url("font/sortsMillGoudy/OFLGoudyStM.otf") format("opentype");
+}
+
+@font-face {
+  font-family:"handwriting-draft_free-version";
+  src:url("font/handwriting-draft_free-version/handwriting-draft_free-version.eot") format("eot");
+  src:url("font/handwriting-draft_free-version/handwriting-draft_free-version.woff") format("woff");
+  src:url("font/handwriting-draft_free-version/handwriting-draft_free-version.ttf") format("truetype");
+  font-weight:normal;
+  font-style:normal;
+}
+
+.about .about-page  h1 {
+  font-family: 'Homenaje', Tahoma, sans-serif;
+/*  font-family: 'SFDistant','Homenaje', Tahoma, sans-serif;*/
+  color: #383838;
+  font-size: 30px;
+/*letter-spacing: 1px;*/
+font-weight: normal;
+margin-top: 20px;
+   border-top: 3px solid #6e6e6e;
+  background-color:  rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+.about .about-page  h1:hover {
+   border-: 5px solid #6e6e6e;
+  background-color:  rgba(0,0,0,0.05);
+}
+
+.about .about-page  h2 {
+  font-family: 'Homenaje', Tahoma, sans-serif;
+  color: #383838;
+  font-size: 25px;
+letter-spacing: 1px;
+font-weight: normal;
+margin-top: 10px;
+}
+
+.about .about-page .line-3 h3 {
+	font-style:italic;
+}
+
+.about .about-page .line-4 h3 {
+	font-weight:bold;
+}
+.about .about-page  h3 {
+  font-family: 'Homenaje', Tahoma, sans-serif;
+  color: #383838;
+  font-size: 20px;
+letter-spacing: 1px;
+font-weight: normal;
+margin-top: 10px;
+}
+.about .about-page  {
+  height: auto;
+  margin-left: 0px;
+}
+
+.about .about-page  a {
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #00c6ff;
+  text-shadow: 0px 1px 0px #fff;
+}
+
+.about .about-page  a:hover {
+  color: #fa453c;
+}
+
+.about .about-page  ol {
+  margin-top: 10px;
+}
+
+.about .about-page  ol.jellybean li {
+  padding: 2px 12px;
+  margin: 2px;
+  font-size: 1em;
+  background-color: #e8e8e8;
+  color: rgb(51,51,51);
+  text-shadow: 0px 1px 0px #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.about .about-page  ol.jellybean li:hover {
+  background-color: #383838;
+  color: #fff;
+}
+
+.info {
+  width: 25%;
+  height: 199px;
+  float: left;
+  padding-top: 50px;
+}
+
+.info .self_photo {
+  width: 330px;
+  height: 199px;
+  float: left;
+  background: url(/css/img/selfphoto.png) no-repeat;
+}
+
+.about-page .line-1 {
+  height: auto;
+  overflow: hidden;
+  margin-top: -40px;
+}
+
+.about-page .line-2, .about-page .line-3, .about-page .line-4, .about-page .line-5 {
+
+  height: auto;
+  overflow: hidden;
+}
+
+.about-page .line-1  {
+  width: 100%;
+  margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+.about-page .line-2 , .about-page .line-3 , .about-page .line-4 , .about-page .line-5  {
+  width: 100%;
+  margin-top: 20px;
+ margin-bottom: 20px;
+}
+
+.about-page   p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: rgb(51, 51, 51);
+  text-shadow: 0px 1px 0px #fff;
+}
+
+.profile {
+text-transform: uppercase;
+color: #414141;
+background-color: #e6e6e6;
+margin-bottom: 40px;
+position: relative;
+overflow: hidden;
+font-size: 25px;
+font-family: 'Source Sans Pro';
+}
+
+.profile img {
+  float: right;
+width: 29%;
+height: auto;
+
+}
+
+
+
+.profile .info {
+        width: 66%;
+padding: 4% 0 0 4%;
+float: left;
+}
+
+.profile .info p.extra-info {
+
+  color: #888;
+}
+
+.profile .info .first-name, .profile .info .last-name {
+  display: inline-block;
+font-size: 36px;
+padding-right: 10px;
+line-height: 36px;
+margin-bottom: 20px;
+}
+
+.profile .info .label-inline {
+  margin-top: 30px;
+margin-bottom: 15px;
+}
+
+.profile .info .label-inline .item{
+  padding-top: 0;
+  color: #868686;
+  display: inline;
+  width: 24%;
+  float: left;
+}
+
+.profile .info .label-inline p{
+  color: #444444;
+padding: 5px 10px;
+margin-left: -10px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+padding: 0;
+}
+
+h3.about-head {
+  letter-spacing: 1px;
+  font-family: 'Terminal Dosis', Arial, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  color: #383838;
+  float: left;
+}

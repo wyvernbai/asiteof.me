@@ -30,7 +30,7 @@
                     <% end%>
                     <a href="#comment<%= comment.id%>" class="time"><%= comment.updated_at.strftime("%B %d, %Y @ %I:%M %p")%></a>
                   </div>
-                  <p><%= escape_html comment.comment%></p>
+                  <p><%= escape_html(comment.comment).gsub("\n", "<br\>")%></p>
                 </div>
 
                 <div id="deleteForm_<%= comment.id%>" class="more">

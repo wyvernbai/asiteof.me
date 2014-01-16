@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-Hans" lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <title>LEMON's Homepage</title>
+    <meta name="robots" content="all" />
+    <meta name="author" content="lemaoliu">
+    <meta http-equiv="X-UA-Compatible" content="IE=100" />
+    <link rel="stylesheet" type="text/css" href="/css/lemaoliu.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-39157716-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+    </script>
+    <script src="/javascripts/jquery/1.5.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="outline"></div>
+    <div class="container">
+  		<div id="content">
+<div class="about">
+  <div class="profile">
+    <img src="/css/img/lemao.JPG" width="350" alt>
+    <div class="info">
+      <div class="first-name">Lemao</div>
+      <div class="last-name">Liu</div>
+      <p class="extra-info">Ph.D. Student</p>
+      <p class="extra-info">Machine Intelligence & Translation Lab</p>
+      <p class="extra-info">School of Computer Science and Technology</p>
+      <p class="extra-info">Harbin institute of Technology</p>
+      <div class="label-inline">
+        <div class="item">E-MAIL: </div> 
+        <p>           lemaoliu AT gmail DOT com</p>
+      </div>
+    </div>
+  </div>
+  <div class="about-page">
+    <div class="line-1">
+      <h1>Who is he?</h1>
+      <p> Lemao Liu is a 5-th Ph.D. student in the school of computer science and technology, Harbin Institute of Technology, his supervisor is Prof. 
+      Tiejun Zhao, a very nice teacher, and he is expected to 
+      graduate in this December. Before that, he got 
+      his M.S. from the department of mathematics in HIT and B.S. from the department of mathematics in Shangrao Normal College. 
+      He was born in a beautiful countryside of Shangrao City, JiangXi, China, and he loves his hometown in his heart. He is a football fan, and 
+      a great supporter of Real-Madrid Club for about 12 years. 
+      
+      </p>
+      <!--li>2001.9 - 2005.7: B.S. in Applied Mathematics, Department of Mathematics, Shangrao normal college. </li--!>
+      <!--li>2005.9 - 2007.7: M.s. in Pure Mathematics, Department of Mathematics, Harbin Institute of Technology. Supervisor: Fengchun Lei</li>
+	    <li>2009.3 - 2013.12(expected): Ph.D. in Computer Science and its Application, School of Computer Science and Technology, Harbin Institute of Technology. Supervisor: Tiejun Zhao</li--!>
+    </div>
+    <div class="line-2">
+      <h1>Internship and Work Experiences </h1>
+	<h2>•	 Universal Communication Research Institute, NICT, Kyoto, Japan (2012.10.1 to 2013.3.31)</h2>
+	<p>He visited the Multilingual Translation Laboratory as an intern and was instructed by Dr. Taro Watanabe (also a very nice teacher as Prof. Zhao). Their research topics were neural networks based SMT model and discriminative training for SMT.</p>
+    </div>
+   	<div class="line-3">
+		<h1>Research interests</h1>
+		<p>Now He is mainly interested in Statistical Machine Translation and its related topics.</p>
+    <h2>•	Discriminative training for Statistical Machine Translation</h2>
+		<p> Discriminative training is a hot topic in SMT. The goal is going towards stable, efficient, and scalable discriminative training methods, which
+		are very helpful for SMT models. </p>
+		<h2>•	Nonlinear Translation Models</h2>
+		<p> Almost all translation models are based on the log-linear model. As one knows, linear models sometimes suffer from the modeling inadequancy especially 
+		when the number of their features is limited. Can anybody go beyond the log-linear model towards nonlinear models with more powerful description ability? </p>
+  </div>
+
+    <div class="line-4">
+      <section>
+      <h1>Publications </h1>
+	<h3><strong>Discriminative Training for SMT: </strong></h3>
+	<li>Lemao Liu, Hailong Cao, Taro Watanabe, Tiejun Zhao, Mo Yu, Conghui Zhu. Locally training the log-linear model for SMT. In EMNLP-CoNLL 2012. <a title="Local PDF" href="/local-training.pdf"> [pdf] </a> </li>
+	<li>Lemao Liu, Tiejun Zhao, Taro Watanabe, Hailong Cao, Conghui Zhu. Expected Error Rate Minimization based on Ultraconservative Updata for SMT. In COLING 2012. <a title="Local PDF" href="/eebuu.pdf"> [pdf] </a> </li>
+	<h3><b>Nonlinear Translation Models:</b></h3>
+	<li>Lemao Liu, Taro Watanabe, Eiichiro Sumita, Tiejun Zhao. Additive Neural Network for SMT. In ACL 2013 (to appear). </li>
+	
+	<h3><strong>Syntactic constraints for SMT:</strong></h3>
+<li>Lemao Liu, Tiejun Zhao, Chao Wang, Hailong Cao. A Unified and Discriminative Soft Syntactic Constraint Model for Hierarchical Phrase-based Translation. In MT-Summit 2011. <a title="Local PDF" href="/udsscm.pdf"> [pdf] </a></li>
+<li>Lemao Liu, Tiejun Zhao, Hailong Cao, Conghui Zhu, Chunyue Zhang. A Hierarchical Partition Model Based on Markov Random Fields for Hierarchical Phrase-Based Machine Translation. In Chinese Journal of Software 2012.  <a title="Local PDF" href="/hpmbmrf.pdf"> [pdf] </a></li>
+      </section>
+    </div>
+    <div class="line-6">
+      <section id="skills">
+      <h1>Skills & Expertise</h1>
+      <ol class="jellybean">
+       	<li> Statistical Machine Translation </li>
+        <li> Natural Language Processing </li>
+        <li> Machine Learning </li>
+        <li> Numerical Optimization  </li>
+        <li> C/C++ </li>
+        <li> perl </li>
+        <li> python </li>
+        <li> matlab </li>
+      </ol>
+      </section>
+    </div>
+<!--
+    <div class="line-5">
+      <section id="internet-footprint">
+      <h1>Downloads</h1>
+      <p><a href="/download1">Parser</a> - parser.<br />
+      <a href="http://www.pixiv.net/member.php?id=4798189">SVM</a> - write something.
+      </p>
+      </section>
+    </div>
+-->
+  </div>
+</div>
+  		</div>
+    </div>
+  </body>
+</html>

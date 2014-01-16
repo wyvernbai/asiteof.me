@@ -110,6 +110,7 @@ From #{Blog.url}
   post '/archives/*/comment/r*' do
     article = Article.filter(:id => params[:splat][0].to_i).first
     not_found unless article
+    if params[:name] != "" && params[:message] != ""
     comment = Comment.new :author => params[:name], :comment => params[:message], :email => params[:email], :website => process_website(params[:website]), :parent_id => params[:splat][1].to_i, :updated_at => Time.now, :ip => request.ip
 
     if Rakismet_Settings.use
@@ -122,6 +123,7 @@ From #{Blog.url}
       comment.save
       article.add_comment(comment)
       Thread.new {mail_send_thread(comment, "http://#{Blog.url}/archives/#{article.id.to_s}", article.title)}
+    end
     end
     redirect "/archives/#{article.id}"
   end

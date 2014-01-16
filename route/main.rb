@@ -18,6 +18,14 @@ class ElvenHut < Sinatra::Application
     erb :yumo
   end
 
+  get "/lemao_liu" do
+    erb :lemao
+  end
+
+  get "/fenglong_xie" do
+    erb :fenglong_xie	  
+  end
+
   get "/project" do
     project_tag = Tag.filter(:name => "project").first
     if project_tag != nil
