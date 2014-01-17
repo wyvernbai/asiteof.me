@@ -12,6 +12,8 @@ A backup of my website powered by [ElvenHut](https://github.com/halfelf/ElvenHut
 ---
 
 #Run
+* <code>bundle install</code> all dependency gems.
+* Install <code>sendmail</code> to support comment email notification.
 * Use rake: <code>rake server</code> (default port: 4568. edit in elvenhut.rb)
 * Or use rainbow: <code>rainbows -p 4568 -E production -c rainbows_threadpool.rb </code> (add or edit details config in rainbows_threadpool.rb)
 
