@@ -1,5 +1,5 @@
-views/archives/*.md
-public/uploads/*
+#views/archives/*.md
+#public/uploads/*
 .DS_Store
 *.*~
 **/*.swp

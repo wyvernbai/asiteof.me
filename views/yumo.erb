@@ -51,9 +51,13 @@
 	    <li>2011.9 until now: Ph.D. in Computer Science and Technology, School of Computer Science and Technology, Harbin Institute of Technology. Supervisor: Tie-Jun Zhao</li>
     </div>
     <div class="line-2">
-      <h1>internship and Work Experiences </h1>
- 	<h2>•	Baidu Inc., Natural Language Processing Group (2012.5-)</h2>
-	<p>Now I’m a research intern working on Deep Learning of NLP. I’ve got the “excellent intern” award in December 2012.</p>
+        <h1>internship and Work Experiences </h1>
+    <h2>•   The Center for Language and Speech Processing, Johns Hopkins University (2013.12 until now) </h2>
+    <p> Now I am a joint PhD. Student at JHU working on learning structured representations for NLP. My advisor is Prof. Mark Dredze.</p>
+ 	<h2>•	Baidu Inc., Natural Language Processing Group (2013.7-2013.12)</h2>
+    <p>I was a research intern working on Dependency Parsing, learning of syntactic representations and online learning algorithms for problems with structured predictions. Some of my work was advised by Prof. Tong Zhang.</p>
+    <h2>•	Baidu Inc., Natural Language Processing Group (2012.5-2013.6)</h2>
+	<p>I was a research intern working on Deep Learning of NLP. I’ve got the “excellent intern” award in December 2012.</p>
  	<h2>•	Microsoft Research Asia, Natural Language Computing Group (2010.08 to 2010.12)</h2>
 	<p>I was hired as an intern to work on twitter sentiment analysis instructed by Long Jiang.</p>
 	<h2>•	Microsoft Research Asia, Web Search & Mining Group (2008.12 to 2009.8)</h2>
@@ -61,25 +65,25 @@
     </div>
    	<div class="line-3">
 		<h1>Research interests</h1>
-		<p>Now I am mainly interested in machine learning and its applications on NLP and syntactic parsing and its applications.</p>
-		<h2>•	Learning Representations for NLP Problems</h2>
-		<p>Deep Learning becomes much popular recent years. While more and more researchers in the field of NLP become working on this topic, I’m not exempt either. My research in this direction focuses on learning better representations for NLP problems. I believe that the usage of representations of language structures, rather than using the texts themselves only, could help to better reveal the meanings behind sentences. And the representations can be learned from huge amount of texts in a semi-supervised way.</p>
-		<h3>Usage of word embedding learned by Neural Language Models</h3>
-		<p>Performed analysis on the properties and usages of word embeddings. Applied word embeddings to NER, Chinese POS-tagging as well as domain adaptation tasks.</p>
-		<h3>Multitask learning framework for representations of words, short texts and documents</h3>
-		<p>I proposed a multitask learning framework for learning representations of natural languages, which was inspired by the works of Dr. Rie Johnson and Dr. Tong Zhang. I have implemented the basic version of the framework. The codes were then optimized for GPU by other colleagues. I have applied the framework to learn word embeddings for NER and POS tagging, to learn phrase and query representations. I have also applied the method to domain adaptation of SA, which achieved a 0.5% higher result than that of SCL on the amazon dataset.</p>
-		<h2>•	Syntactic Parsing and its applications</h2>
+		<p>Now I am mainly interested in machine learning, syntactic parsing and their applications.</p>
+        <h2>•	Learning Representations for NLP Problems</h2>
+        <h3>Learning of syntactic representations</h3>
+        <p> Working on learning and applications of word representations and structured representations with syntactic information.</p>
+        </details>
+        <h3>Learning of word embedding and its applications</h3>
+		<p> Working on learning strategies of word embeddings. Applied word embeddings to NER, Chinese POS-tagging as well as cross-lingual projection tasks.</p>
+        <h2>•	Syntactic Parsing and its applications</h2>
+        <h3>Online learning for dependency parsing </h3>
+        <p>Improving the online learning algorithms and distributed online learning algorithms for dependency parsing. </p>
 		<h3>Domain adaptation for dependency parsing</h3>
 		<p>Analyzed the performances of graph-based and transition-based dependency parsers and domain differences of dependency parsing. Researched on domain adaptation methods for dependency parsing.</p>
 		<h3>Target-dependent and Context-based Sentiment Analysis</h3>
 		<p>Researched on target-dependent (based on information from dependency parsing) and context-based (based on conditional random fields) sentiment analysis for tweets.</p>
-		<h3>An Investigation on Semi-supervised Learning of Parsing</h3>
-		<p>Worked on smoothing the probabilities estimated by Collins parser by assigning latent variables (topics) to words.</p>
-		<h2>•	Machine Learning and its Applications on NLP</h2>
-		<h3>Semi-supervised learning and its applications on NLP</h3>
+		<h2>•	Machine Learning and its Applications to NLP</h2>
+        <h3>Online learning and its applications to NLP</h3>
+        <p> </p>
+        <h3>Semi-supervised learning and its applications to NLP</h3>
 		<p>Extended semi-supervised learning methods (e.g. co-training and label propagation) to handle problems with structured predictions and applied the methods to cross-lingual projection and other NLP tasks. Carried out theoretical analysis on the experimental results. </p>
-		<h3>String kernels and its applications</h3>
-		<p>Learned the principles of string kernels, e.g. p-spectrum kernels, sub-sequence kernels and weighted gap sub-sequence kernels. Worked on the applications of string kernels to textual classifications.</p>
 		<h2>•	Image Retrieval</h2>
 		<h3>Re-ranking of results of image retrieval based on Dirichlet Processes (DP)</h3>
 		<p>Learned the principle of DP and worked on image clustering using DP with multi-views (textual and visual information) and its application to image search re-ranking.</p>
@@ -90,14 +94,15 @@
       <section>
       <h1>Publications </h1>
 	<h3><strong>Learning representations for NLP tasks: </strong></h3>
-	<li>Mo Yu, Tiejun Zhao and Yalong Bai, Hao Tian, Dianhai Yu. Cross-lingual Projections between Languages from different Families. ACL2013 short paper (accepted). <a title="Local PDF" href="/acl2013.pdf"> [pdf] </a> </li>
-	<li>Mo Yu, Tiejun Zhao, Daxiang Dong, Hao Tian, Dianhai Yu: Compound Embedding Features for Semi-supervised Learning. NAACL 2013 short paper (accepted). <a title="Local PDF" href="/naaclhlt2013-embedding-final.pdf"> [pdf] </a> </li>
+    <li>Mo Yu, Mark Dredze. Improving Lexical Embeddings with Semantic Knowledge. Association for Computational Linguistics (ACL), 2014 short (accepted). <a title="Local PDF" href="/Improving Lexical Embeddings with Semantic Knowledge.pdf"> [pdf] </a> <a href="https://github.com/Gorov/JointRCM"> [code & data] </a> </li>
+	<li>Mo Yu, Tiejun Zhao and Yalong Bai, Hao Tian, Dianhai Yu. Cross-lingual Projections between Languages from different Families. ACL2013 short paper. <a title="Local PDF" href="/acl2013.pdf"> [pdf] </a> </li>
+	<li>Mo Yu, Tiejun Zhao, Daxiang Dong, Hao Tian, Dianhai Yu: Compound Embedding Features for Semi-supervised Learning. NAACL 2013 short paper. <a title="Local PDF" href="/naaclhlt2013-embedding-final.pdf"> [pdf] </a> </li>
 	<h3><b>Syntactic parsing and its applications:</b></h3>
-	<li>Mo Yu, Tiejun Zhao, Yalong Bai. Learning Domain Differences Automatically for Dependency Parsing Adaptation. IJCAI 2013 poster (accepted). <a title="Local PDF" href="/ijcai13.pdf"> [pdf] </a></li>
+	<li>Mo Yu, Tiejun Zhao, Yalong Bai. Learning Domain Differences Automatically for Dependency Parsing Adaptation. IJCAI 2013 poster. <a title="Local PDF" href="/ijcai13.pdf"> [pdf] </a></li>
 	<li>Long Jiang, Mo Yu, Ming Zhou, Xiaohua Liu, Tiejun Zhao: Target-dependent Twitter Sentiment Classification. ACL 2011: 151-160</li>
 	<li>Zhen Li, Hanjing Li, Mo Yu, Tiejun Zhao, Sheng Li: Event Entailment Extraction Based on EM Iteration. IALP 2010: 101-104</li>
 	<h3><b>Machine learning and its applications on NLP:</b></h3>
-    <li>Mo Yu, Tiejun Zhao, Penglong Hu. A Theoretical Analysis on Structured Learning with Noisy Data and its Applications. Journal of Software. 2013 (accepted, In Chinese). <a title="Local PDF" href="/cf019-final-word2003.pdf"> [pdf] </a> </li>
+    <li>Mo Yu, Tiejun Zhao, Penglong Hu. A Theoretical Analysis on Structured Learning with Noisy Data and its Applications. Journal of Software. 2013 (In Chinese). <a title="Local PDF" href="/cf019-final-word2003.pdf"> [pdf] </a> </li>
 	<li>Lemao Liu, Hailong Cao, Taro Watanabe, Tiejun Zhao, Mo Yu, Conghui Zhu. Locally Training the Log-Linear Model for SMT. EMNLP-CoNLL 2012.</li>
 	<li>Huashen Liang, Lemao Liu, Mo Yu, Yupeng Liu, Penglong Hu, Tingting Li, Chunyue Zhang, Hailong Cao, Tiejun Zhao. Technique reports of HIT-Machine Intelligence & Translation Lab for CWMT2011 (In Chinese)</li>
 	<li>Mo Yu, Shu Wang, Conghui Zhu, Tiejun Zhao: Semi-supervised learning for word sense disambiguation using parallel corpora. FSKD 2011: 1490-1494</li>
@@ -125,11 +130,13 @@ I’ve written a proposal with my advisor to Natural Science Foundation of China
         <li> Machine Learning </li>
         <li> Natural Language Processing </li>
         <li> Deep Learning </li>
-        <li> Domain Adaptation </li>
-        <li> Dependency Parsing </li>
+        <li> Semantic Similarity </li>
         <li> Cross-lingual Projection </li>
         <li> Sentiment Analysis </li>
         <li> Named Entity Recognition </li>
+        <li> Online Learning </li>
+        <li> Domain Adaptation </li>
+        <li> Dependency Parsing </li>
         <li> Machine Translation </li>
         <li> Information Retrieval</li>
         <li> C/C++ </li>

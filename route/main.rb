@@ -10,6 +10,10 @@ class ElvenHut < Sinatra::Application
     end
   end
 
+  get "/ylbai" do
+    erb :ylbai
+  end
+
   get "/about" do
     erb :about, :layout => :background
   end
